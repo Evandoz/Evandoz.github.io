@@ -11,10 +11,10 @@
 }
 
 
-/*  General CSS*/
+/*  General CSS  */
 html, body {
   height: 100%;
-  font: 400 16px/1.6 "Microsoft JhengHei", "Galdeano", "PingFang SC", "Helvetica Neue", "Microsoft YaHei", sans-serif;
+  font: 400 16px/1.6 "PingFang SC", "Helvetica Neue", "Microsoft YaHei", sans-serif;
 }
 
 h1, h2, h3, h4, h5 ,h6 {
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 
-/*    Billboard    */
+/*  Billboard  */
 .billboard {
   position: relative;
   width: 100%;
@@ -46,23 +46,40 @@ h1, h2, h3, h4, h5 ,h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-/*.billboard.light {
-  background: url('../img/billboard.jpg') no-repeat;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+}
+
+.billboard::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.billboard.light {
+  background-image: url('../img/billboard-light.jpg');
+}
+
+.billboard.light::before {
+  background-color: rgba(0, 0, 0, .4);
 }
 
 .billboard.dark {
-  background: url('../img/billboard.jpg') no-repeat;
-  background-size: cover;
-  background-position: center;
-}*/
+  background-image: url('../img/billboard-dark.jpg');
+}
+
+.billboard.dark::before {
+  background-color: rgba(255, 255, 255, .6);
+}
 
 
-/*    header    */
+/*  Header  */
 .billboard header {
+  position: relative;
   width: 100%;
   margin-bottom: 18vh;
   text-align: center;
@@ -73,7 +90,7 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 .billboard.dark header {
-  color: #223344;
+  color: #000000;
 }
 
 .billboard header h1 {
@@ -82,7 +99,7 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 .billboard header h1 a {
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   text-decoration: none;
 }
 
@@ -91,7 +108,7 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 .billboard.dark header h1 {
-  color: #223344;
+  color: #000000;
 }
 
 .billboard.light header h1 a {
@@ -99,7 +116,7 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 .billboard.dark header h1 a {
-  color: #223344;
+  color: #000000;
 }
 
 .billboard.light header p {
@@ -107,7 +124,7 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 .billboard.dark header p {
-  color: #223344;
+  color: #000000;
 }
 
 .billboard header hr {
@@ -124,7 +141,7 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 .billboard.dark header hr {
-  background: #223344;
+  background: #000000;
 }
 
 .billboard header nav {
@@ -150,20 +167,20 @@ h1, h2, h3, h4, h5 ,h6 {
   color: #ffffff;
 }
 
-/*.billboard.light header nav ul li a:hover {
+.billboard.light header nav ul li a:hover {
   color: #b9b9b9;
-}*/
-
-.billboard.dark header nav ul li a {
-  color: #223344;
 }
 
-/*.billboard.dark header nav ul li a:hover {
+.billboard.dark header nav ul li a {
+  color: #000000;
+}
+
+.billboard.dark header nav ul li a:hover {
   color: #919191;
-}*/
+}
 
 
-/*    footer    */
+/*  Footer  */
 .billboard footer {
   position: absolute;
   bottom: 0;
@@ -171,15 +188,4 @@ h1, h2, h3, h4, h5 ,h6 {
   padding: 12px 0;
   overflow: hidden;
   z-index: 9;
-}
-
-.billboard footer .copyright p,
-.billboard footer .copyright a {
-  color: #838181;
-  font-size: .9em;
-  text-align: center;
-}
-
-.billboard footer .copyright a {
-  text-decoration: none;
 }
