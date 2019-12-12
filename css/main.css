@@ -46,6 +46,7 @@ h1, h2, h3, h4, h5 ,h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #ffffff;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,6 +59,7 @@ h1, h2, h3, h4, h5 ,h6 {
   right: 0;
   bottom: 0;
   left: 0;
+  background-color: transparent;
 }
 
 .billboard.light {
@@ -65,7 +67,7 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 .billboard.light::before {
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, .35);
 }
 
 .billboard.dark {
@@ -73,7 +75,7 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 .billboard.dark::before {
-  background-color: rgba(255, 255, 255, .6);
+  background-color: rgba(255, 255, 255, .15);
 }
 
 
@@ -86,11 +88,11 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 .billboard.light header {
-  color: #ffffff;
+  color: #eaeaea;
 }
 
 .billboard.dark header {
-  color: #000000;
+  color: #eaeaea;
 }
 
 .billboard header h1 {
@@ -104,27 +106,27 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 .billboard.light header h1 {
-  color: #ffffff;
+  color: #eaeaea;
 }
 
 .billboard.dark header h1 {
-  color: #000000;
+  color: #eaeaea;
 }
 
 .billboard.light header h1 a {
-  color: #ffffff;
+  color: #eaeaea;
 }
 
 .billboard.dark header h1 a {
-  color: #000000;
+  color: #eaeaea;
 }
 
 .billboard.light header p {
-  color: #ffffff;
+  color: #eaeaea;
 }
 
 .billboard.dark header p {
-  color: #000000;
+  color: #eaeaea;
 }
 
 .billboard header hr {
@@ -137,11 +139,11 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 .billboard.light header hr {
-  background: #ffffff;
+  background: #eaeaea;
 }
 
 .billboard.dark header hr {
-  background: #000000;
+  background: #eaeaea;
 }
 
 .billboard header nav {
@@ -164,7 +166,7 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 .billboard.light header nav ul li a {
-  color: #ffffff;
+  color: #eaeaea;
 }
 
 .billboard.light header nav ul li a:hover {
@@ -172,11 +174,11 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 .billboard.dark header nav ul li a {
-  color: #000000;
+  color: #eaeaea;
 }
 
 .billboard.dark header nav ul li a:hover {
-  color: #919191;
+  color: #b1b1b1;
 }
 
 
